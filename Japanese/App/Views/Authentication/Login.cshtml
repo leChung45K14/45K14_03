@@ -1,0 +1,107 @@
+@{
+  ViewData["Title"] = "Login";
+  string? message = ViewData["Message"] as string;
+}
+
+<div class="container mt-5">
+  <div class="row mb-3">
+    <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 col-xs-12">
+      <h1 class="block-title__title mt-2">Login</h1>
+      <form method="post" action="./Login" class="mt-4">
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email&nbsp;<span class="required">*</span></label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Email" autocomplete="email">
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Password&nbsp;<span class="required">*</span></label>
+          <span class="lp-password-input">
+            <input type="password" name="password" id="password" class="form-control" placeholder="Password"
+              autocomplete="current-password"><span class="lp-show-password-input"></span>
+          </span>
+        </div>
+
+        <div class="mb-3">
+
+          <label>
+            <input type="checkbox" name="rememberme"> Remember me
+          </label>
+          <button type="submit" class="thm-btn course-one__link mt-0">Login</button>
+        </div>
+      </form>
+
+      @if (message != null)
+      {
+        <div class="alert alert-danger mt-3">@message</div>
+      }
+    </div>
+
+    <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+      <div class="px-4 py-3 border">
+        <h4 class="fw-bold mb-4">Instructors</h4>
+
+        <div class="row mb-3">
+          <div class="col-auto">
+            <img width="64" height="64"
+              src="https://gaviaspreview.com/wp/kipso/wp-content/uploads/2015/12/team-5-100x100.jpg"
+              class="rounded-circle img-thumbnail" alt="User Avatar" />
+          </div>
+          <div class="col">
+            <a href="#"> Christine Eve</a>
+            <div class="total-course">1 Courses</div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-auto">
+            <img width="64" height="64"
+              src="https://gaviaspreview.com/wp/kipso/wp-content/uploads/2015/12/team-5-100x100.jpg"
+              class="rounded-circle img-thumbnail" alt="User Avatar" />
+          </div>
+          <div class="col">
+            <a href="#"> Christine Eve</a>
+            <div class="total-course">1 Courses</div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-auto">
+            <img width="64" height="64"
+              src="https://gaviaspreview.com/wp/kipso/wp-content/uploads/2015/12/team-5-100x100.jpg"
+              class="rounded-circle img-thumbnail" alt="User Avatar" />
+          </div>
+          <div class="col">
+            <a href="#"> Christine Eve</a>
+            <div class="total-course">1 Courses</div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-auto">
+            <img width="64" height="64"
+              src="https://gaviaspreview.com/wp/kipso/wp-content/uploads/2015/12/team-5-100x100.jpg"
+              class="rounded-circle img-thumbnail" alt="User Avatar" />
+          </div>
+          <div class="col">
+            <a href="#"> Christine Eve</a>
+            <div class="total-course">1 Courses</div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-auto">
+            <img width="64" height="64"
+              src="https://gaviaspreview.com/wp/kipso/wp-content/uploads/2015/12/team-5-100x100.jpg"
+              class="rounded-circle img-thumbnail" alt="User Avatar" />
+          </div>
+          <div class="col">
+            <a href="#"> Christine Eve</a>
+            <div class="total-course">1 Courses</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
