@@ -1,0 +1,74 @@
+@{
+  ViewData["Title"] = "Contact";
+}
+<section class="inner-banner">
+  <div class="container">
+    <ul class="list-unstyled thm-breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li class="active"><a href="#">Contact</a></li>
+    </ul><!-- /.list-unstyled -->
+    <h2 class="inner-banner__title">Contact</h2><!-- /.inner-banner__title -->
+  </div><!-- /.container -->
+</section><!-- /.inner-banner -->
+<section class="contact-info-one">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="contact-info-one__single wow fadeInDown" data-wow-duration="1500ms">
+          <div class="contact-info-one__icon"><i class="kipso-icon-manager"></i><!-- /.kipso-icon-manager -->
+          </div><!-- /.contact-info-one__icon -->
+          <h2 class="contact-info-one__title">About Us </h2><!-- /.contact-info-one__title -->
+          <p class="contact-info-one__text">Japanese learning center
+          </p><!-- /.contact-info-one__text -->
+        </div><!-- /.contact-info-one__single -->
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <div class="contact-info-one__single wow fadeInUp" data-wow-duration="1500ms">
+          <div class="contact-info-one__icon"><i class="kipso-icon-placeholder"></i>
+            <!-- /.kipso-icon-manager -->
+          </div><!-- /.contact-info-one__icon -->
+          <h2 class="contact-info-one__title">Our Address</h2><!-- /.contact-info-one__title -->
+          <p class="contact-info-one__text">71 Ngu Hanh Son,
+            Da Nang <br> Viet Nam</p><!-- /.contact-info-one__text -->
+        </div><!-- /.contact-info-one__single -->
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <div class="contact-info-one__single wow fadeInDown" data-wow-duration="1500ms">
+          <div class="contact-info-one__icon"><i class="kipso-icon-contact"></i><!-- /.kipso-icon-manager -->
+          </div><!-- /.contact-info-one__icon -->
+          <h2 class="contact-info-one__title">Contact Info</h2><!-- /.contact-info-one__title -->
+          <p class="contact-info-one__text">chieuthuymaijenny@gmail.com<br>
+            0963 779 109 <br> &nbsp; </p><!-- /.contact-info-one__text -->
+        </div><!-- /.contact-info-one__single -->
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.contact-info-one -->
+<section class="contact-one">
+  <div class="container">
+    <h2 class="contact-one__title text-center">Get in touch <br>
+      with us</h2><!-- /.contact-one__title -->
+    <div class="contact-one__form contact-form-validated">
+      <div class="row low-gutters">
+        <div class="col-lg-6">
+          <input type="text" ID="name" runat="server" name="name" placeholder="Your Name" />
+        </div><!-- /.col-lg-6 -->
+        <div class="col-lg-6">
+          <input type="text" ID="email" runat="server" placeholder="Email Address" name="email" />
+        </div><!-- /.col-lg-6 -->
+        <div class="col-lg-12">
+          <input type="text" ID="message" runat="server" placeholder="Write Message" name="message" Columns="10" />
+          <div class="text-center">
+            <button ID="btnSubmit" runat="server" class="contact-one__btn thm-btn" OnClick="btnSubmit_Click">Submit
+              Comment</button>
+          </div><!-- /.text-center -->
+        </div><!-- /.col-lg-12 -->
+      </div><!-- /.row -->
+    </div><!-- /.contact-one__form -->
+    <div class="result text-center"></div><!-- /.result -->
+  </div><!-- /.container -->
+</section><!-- /.contact-one -->
+
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52718.186914306985!2d108.16334937108029!3d16.0477528708569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219fae646da25%3A0x7ab147e933a296b9!2zSOG7jWMgdGnhur9uZyBuaOG6rXQgxJDDoCBO4bq1bmc!5e0!3m2!1svi!2s!4v1651834011425!5m2!1svi!2s"
+  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="google-map__contact"></iframe>
