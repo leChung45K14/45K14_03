@@ -13,8 +13,8 @@ namespace OnlineEdu
         {
             TextBox emailInput = (TextBox) Page.PreviousPage.FindControl("emailInput");
             TextBox password = (TextBox) Page.PreviousPage.FindControl("passwordInput");
-            email.InnerText = emailInput.Text;
-            phone.InnerText = password.Text;
+            //email.InnerText = emailInput.Text;
+            //phone.InnerText = password.Text;
         }
     }
 }

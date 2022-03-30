@@ -39,8 +39,8 @@
                     <a href="#">0963 779 109</a>
                 </div><!-- /.topbar-one__left -->
                 <div class="topbar-one__right">
-                    <a href="#">Login</a>
-                    <a href="#">Register</a>
+                    <a href="Login.aspx">Login</a>
+                    <a href="register.aspx">Register</a>
                 </div><!-- /.topbar-one__right -->
             </div><!-- /.container -->
         </div><!-- /.topbar-one -->
@@ -52,8 +52,8 @@
                         <a href="#">0963 779 109</a>
                     </div><!-- /.topbar-one__left -->
                     <div class="topbar-one__right">
-                        <a href="#">Login</a>
-                        <a href="#">Register</a>
+                        <a href="Login.aspx">Login</a>
+                        <a href="register.aspx">Register</a>
                     </div><!-- /.topbar-one__right -->
                 </div><!-- /.container -->
             </div><!-- /.topbar-one -->
@@ -61,7 +61,7 @@
                 <div class="container clearfix">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="logo-box clearfix">
-                        <a class="navbar-brand" href="index-3.html">
+                        <a class="navbar-brand" href="index-3.aspx">
                             <img src="assets/images/logo-light.png" class="main-logo" width="128" alt="Awesome Image" />
                         </a>
                         <button class="menu-toggler" data-target=".main-navigation">
@@ -72,24 +72,24 @@
                     <div class="main-navigation">
                         <ul class=" navigation-box">
                             <li>
-                                <a href="index-3.html">Home</a>
+                                <a href="index-3.aspx">Home</a>
                             </li>
                             <li>
                                 <a href="#">Pages</a>
                                 <ul class="sub-menu">
-                                    <li><a href="pricing.html">Pricing Plans</a></li>
-                                    <li><a href="faq.html">FAQ'S</a></li>
+                                    <li><a href="pricing.aspx">Pricing Plans</a></li>
+                                    <li><a href="faq.aspx">FAQ'S</a></li>
                                 </ul><!-- /.sub-menu -->
                             </li>
                             <li class="current">
-                                <a href="courses.html">Courses</a>
+                                <a href="courses.aspx">Courses</a>
                                 <ul class="sub-menu">
-                                    <li><a href="courses.html">Courses</a></li>
-                                    <li><a href="course-details-n5.html">Course Details</a></li>
+                                    <li><a href="courses.aspx">Courses</a></li>
+                                    <li><a href="course-details-n5.aspx">Course Details</a></li>
                                 </ul><!-- /.sub-menu -->
                             </li>
                             <li>
-                                <a href="contact.html">Contact</a>
+                                <a href="Contact.aspx">Contact</a>
                             </li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
@@ -471,7 +471,7 @@
                                 </div><!-- /.course-details__list-img -->
                                 <div class="course-details__list-content">
                                     <a class="course-details__list-author">by <span>Thuy Chill</span></a>
-                                    <h3><a href="course-details-n3.html">JLPT N3</a></h3>
+                                    <h3><a href="course-details-n3.aspx">JLPT N3</a></h3>
                                     <div class="course-details__list-stars">
                                         <i class="fas fa-star"></i><!-- /.fas fa-star -->
                                         <i class="fas fa-star"></i><!-- /.fas fa-star -->
@@ -488,7 +488,7 @@
                                 </div><!-- /.course-details__list-img -->
                                 <div class="course-details__list-content">
                                     <a class="course-details__list-author">by <span>Anh Minh</span></a>
-                                    <h3><a href="course-details-n5.html">JLPT N5</a></h3>
+                                    <h3><a href="course-details-n5.aspx">JLPT N5</a></h3>
                                     <div class="course-details__list-stars">
                                         <i class="fas fa-star"></i><!-- /.fas fa-star -->
                                         <i class="fas fa-star"></i><!-- /.fas fa-star -->
@@ -505,7 +505,7 @@
                                 </div><!-- /.course-details__list-img -->
                                 <div class="course-details__list-content">
                                     <a class="course-details__list-author">by <span>Thuy Chill</span></a>
-                                    <h3><a href="course-details-n1.html">JLPT N1</a></h3>
+                                    <h3><a href="course-details-n1.aspx">JLPT N1</a></h3>
                                     <div class="course-details__list-stars">
                                         <i class="fas fa-star"></i><!-- /.fas fa-star -->
                                         <i class="fas fa-star"></i><!-- /.fas fa-star -->
@@ -523,15 +523,15 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-3 col-lg-6 col-sm-12">
-                            <div class="footer-widget footer-widget__contact">
+                            <div class="footer-widget footer-widget__Contact">
                                 <h2 class="footer-widget__title">Courses</h2><!-- /.footer-widget__title -->
                                 <ul class="list-unstyled footer-widget__course-list">
                                     <li>
-                                        <h2><a href="course-details-n5.html">Online Japanese for beginners</a></h2>
+                                        <h2><a href="course-details-n5.aspx">Online Japanese for beginners</a></h2>
                                         <p>Anh Minh</p>
                                     </li>
                                     <li>
-                                        <h2><a href="course-details-n5.html"> Online Japanese for intermediate students </a></h2>
+                                        <h2><a href="course-details-n5.aspx"> Online Japanese for intermediate students </a></h2>
                                         <p>Thuy Chill</p>
                                     </li>
                                 </ul><!-- /.footer-widget__course-list -->
@@ -542,10 +542,10 @@
                                 <h2 class="footer-widget__title">Explore</h2><!-- /.footer-widget__title -->
                                 <div class="footer-widget__link-wrap">
                                     <ul class="list-unstyled footer-widget__link-list">
-                                        <li><a href="index-3.html">Overview</a></li> 
-                                        <li><a href="courses.html">Course </a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="#">Register Now</a></li>
+                                        <li><a href="index-3.aspx">Overview</a></li> 
+                                        <li><a href="courses.aspx">Course </a></li>
+                                        <li><a href="Contact.aspx">Contact</a></li>
+                                        <li><a href="register.aspx">Register Now</a></li>
                                     </ul><!-- /.footer-widget__link-list -->
                                 </div><!-- /.footer-widget__link-wrap -->
                             </div><!-- /.footer-widget -->
@@ -569,7 +569,7 @@
                                 <p class="footer-widget__text"> Japanese learning center. <br>
                                     All of the narration contains English subtitles, so that foreigner Japanese learners can freely study.</p><!-- /.footer-widget__text -->
                                 <div class="footer-widget__btn-block">
-                                    <a href="contact.html" class="thm-btn">Contact</a><!-- /.thm-btn -->
+                                    <a href="Contact.aspx" class="thm-btn">Contact</a><!-- /.thm-btn -->
                                     <a href="#" class="thm-btn">Purchase</a><!-- /.thm-btn -->
                                 </div><!-- /.footer-widget__btn-block -->
                             </div><!-- /.footer-widget -->
