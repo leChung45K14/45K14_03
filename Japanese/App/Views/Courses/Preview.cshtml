@@ -1,0 +1,51 @@
+@using System.Data;
+
+@model DataRow
+@{
+  DataRow course = Model;
+  int idCourse = course.Field<int>("ID");
+  Int64 donGia = course.Field<Int64>("DonGia");
+
+  ViewData["Title"] = $"{course["TenKhoaHoc"]} Preview";
+
+  List<DataRow>? videos = ViewData["videos"] as List<DataRow>;
+
+  string currentIdYoutube = ViewData["idYoutube"] as string;
+  if (string.IsNullOrEmpty(currentIdYoutube))
+    currentIdYoutube = videos[0].Field<string>("IDYoutube");
+}
+
+<section class="inner-banner">
+  <div class="container">
+    <ul class="list-unstyled thm-breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li class="active"><a href="#">Course Details</a></li>
+    </ul><!-- /.list-unstyled -->
+    <h2 class="inner-banner__title">Course Details</h2><!-- /.inner-banner__title -->
+  </div><!-- /.container -->
+</section><!-- /.inner-banner -->
+
+<div class="container mt-4 mb-3">
+  <div class="row">
+    <div class="col-8">
+      <iframe width="100%" height="600" src="https://www.youtube.com/embed/@currentIdYoutube" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <div class="col-4">
+      <ul class="list-group list-group-flush">
+        @foreach (DataRow video in videos!)
+        {
+          string idYoutube = video.Field<string>("IDYoutube");
+          string name = video.Field<string>("Ten");
+
+          if (idYoutube == currentIdYoutube) {
+            <a href="?idCourse=@idCourse&idYoutube=@idYoutube" class="list-group-item list-group-item-action list-group-item-secondary active">@name</a>
+          } else {
+            <a href="?idCourse=@idCourse&idYoutube=@idYoutube" class="list-group-item list-group-item-action list-group-item-secondary">@name</a>
+          }
+        }
+      </ul>
+    </div>
+  </div>
+</div>
