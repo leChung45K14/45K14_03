@@ -38,6 +38,28 @@ public class AuthenticationController : Controller
     return Redirect("/");
   }
 
+  public IActionResult Register()
+  {
+    return View();
+  }
+
+  [HttpPost]
+  public IActionResult Register(IFormCollection form)
+  {
+    DataRow nguoiDung = _nguoiDungService.AddNguoiDung(form["name"], form["gender"], DateTime.Parse(form["dob"]), form["phoneNumber"], form["email"], form["password"]);
+
+    HttpContext.Session.SetString("Name", nguoiDung["HoTen"].ToString());
+    HttpContext.Session.SetString("Email", nguoiDung["Email"].ToString());
+    return Redirect("/");
+  }
+
+  public IActionResult Logout()
+  {
+    HttpContext.Session.Remove("Name");
+    HttpContext.Session.Remove("Email");
+    return RedirectToAction("Login");
+  }
+
   [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
   public IActionResult Error()
   {
