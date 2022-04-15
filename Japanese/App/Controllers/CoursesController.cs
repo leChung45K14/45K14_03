@@ -96,10 +96,7 @@ public class CoursesController : Controller
   [HttpPost]
   public IActionResult Buy(int idCourse)
   {
-    Console.WriteLine(idCourse);
-    DataRow? course = _khoaHocService.GetKhoaHocById(idCourse);
-    _donHangService.AddNewDonHang(HttpContext.Session.GetString("Email")!, idCourse, course!.Field<Int64>("DonGia"));
-    return Redirect("/Home/Success");
+    return Redirect("/Contact/Buy");
   }
 
   [HttpPost]

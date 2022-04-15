@@ -13,6 +13,7 @@ namespace App.Services
             video => video.Field<int>("IDKhoaHoc"),
             course => course.Field<int>("ID"),
             (video, course) => new {video = video, course = course})
+        .Where(item => item.course.Field<int>("ID") == idCourse)
         .ToList();
 
         List<DataRow> result = new List<DataRow>();

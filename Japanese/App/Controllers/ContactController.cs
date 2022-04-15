@@ -18,6 +18,11 @@ public class ContactController : Controller
     return View();
   }
 
+  public IActionResult Buy()
+  {
+    return View();
+  }
+
   [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
   public IActionResult Error()
   {
