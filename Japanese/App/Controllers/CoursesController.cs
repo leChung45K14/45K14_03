@@ -81,6 +81,11 @@ public class CoursesController : Controller
     return View(course);
   }
 
+    public IActionResult BuySuccess()
+    {
+        return View();
+    }
+
   public IActionResult Preview(int idCourse, string idYoutube)
   {
     ViewData["idYoutube"] = idYoutube;
